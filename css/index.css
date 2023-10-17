@@ -1,0 +1,46 @@
+#introduction_div{
+    margin: 10px;
+    color: #d35400;
+    background: #ffe8d6;
+    border-radius: 10px;
+    /* padding: 20px 10px; */
+}
+
+#group_links img{
+    width: 35px;
+    margin-right: 10px;
+}
+
+#group_links_links{
+    display: flex;
+    flex-direction: column;
+}
+
+#group_links_links a{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#telegram_link_div{
+    background: rgb(36, 170, 235, 0.5);
+}
+
+#whatsapp_link_div{
+    background: rgb(76, 175, 80, 0.5);
+}
+
+.footer{
+    text-align: center;
+    font-size: 14px; 
+}
+
+.footer_small{
+    font-size: 10px;
+}

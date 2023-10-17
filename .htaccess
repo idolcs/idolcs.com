@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^([0-9])$ sem.php?semester=$1 [L]
+RewriteRule ^([0-9])/$ sem.php?semester=$1 [L]
+RewriteRule ^([0-9]{3})$ subject.php?subject=$1 [L]
+RewriteRule ^([0-9]{3})/$ subject.php?subject=$1 [L]
+RewriteRule ^([0-9]+)/([0-9]+)$ permalink.php?sub=$1&chap=$2 [L]
+RewriteRule ^([0-9]+)/([0-9]+)/$ permalink.php?sub=$1&chap=$2 [L]
+# RewriteRule ^([0-9]+)/([0-9]+)$ /index.php?subject=$1&chap=$2 [L]

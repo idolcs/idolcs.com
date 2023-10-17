@@ -1,0 +1,15 @@
+#subjects_links_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+#subjects_links_wrapper a{
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 100%;
+    color: #d35400;
+    background: #ffe8d6;
+    font-weight: 600;
+}
