@@ -9,8 +9,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IDOL CS</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/base.css?v=1.1" />
+  <link rel="stylesheet" href="css/index.css?v=1.1" />
 </head>
 
 <body>
@@ -18,16 +18,14 @@
     <div class="div_1" id="introduction_div">
       <h3>Hey there 👋</h3>
       <p>
-        You can find notes of BSc Computer Science IDOL or University of
-        Mumbai here! We are working towards providing the students with better
-        curated notes and video explanations to help them score in exams!
+        Find notes, recorded lectures, video explanations and other resources for BSC CS IDOL (MU)
       </p>
     </div>
     <div class="divider_1"></div>
     <div class="div_1" id="semester_wise_redirects">
       <p>Access the notes, video explanations, live sessions and official lecture recordings as per semester 👇</p>
       <div id="semester_links" class="links_1">
-        <a href="1">Semester 1</a>
+        <a class="important_link" href="1">Semester 1</a>
       </div>
     </div>
     <div class="divider_1"></div>
@@ -109,8 +107,8 @@
     </div>
     <div class="divider_1"></div>
     <div class="div_1 footer" >
-      <p>Developed and Maitained by <a href="https://instagram.com/classicaf">Yash</a></p>
-      <p class="footer_small">This is website / community does not support, endorse or perform piracy. Contact the admins for removal</p>
+      <p class="footer_p">Developed and Maintained by <a target="_blank" href="https://instagram.com/classicaf">Yash</a></p>
+      <p class="footer_small">This is website / community does not support, endorse or perform piracy. Contact the admins on Telegram for removal of any copyrighted material.</p>
     </div>
   </div>
 </body>

@@ -18,8 +18,8 @@
     ?>
     <title>Document</title>
     <base href="/">
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/subject.css" />
+    <link rel="stylesheet" href="css/base.css?v=1.1" />
+    <link rel="stylesheet" href="css/subject.css?v=1.1" />
   </head>
   <body>
     <div id="main_wrapper">
