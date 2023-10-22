@@ -20,11 +20,13 @@
         <p>Back</p>
       </a>
       <div class="divider_1"></div>
-    <div class="div_1">
-      <h2>All Resources</h2>
+      <div class="div_1">
+        <h2>Other Resources</h2>
+        <p>Chapter's Resources can be found in the particular chapter's page</p>
+        <div class="divider_1"></div>
       <div class="links_1">
       <?php
-        $query = "SELECT * FROM `resources` ORDER BY `id` DESC LIMIT 5";
+        $query = "SELECT * FROM `resources` WHERE `subject_code` = '0'  ORDER BY `id` DESC LIMIT 5";
         $result = mysqli_query($db, $query);
         if ($result) {
           while ($row = mysqli_fetch_assoc($result)) {

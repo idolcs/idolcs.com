@@ -129,6 +129,10 @@
                 <input type="text" name="title">
             </label>
             <label for="">
+                <p>Subject Code</p>
+                <input type="number" name="subject_code">
+            </label>
+            <label for="">
                 <p>Description</p>
                 <input type="text" name="description">
             </label>

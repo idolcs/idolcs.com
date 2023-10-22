@@ -48,7 +48,7 @@
 
       <div class="div_1" id="notes_redirects">
         <p>Chapterwise Notes and Video Explanations (Telegram)</p>
-        <div id="chapters_links">
+        <div class="links_1">
           <?php
             $query = "SELECT * FROM `chapters` WHERE `subject_id` = '$subject'";
             $result = mysqli_query($db, $query);
@@ -65,7 +65,7 @@
 
       <div class="div_1" id="notes_redirects">
         <p>College Lecture Recordings (Youtube)</p>
-        <div id="lecture_links">
+        <div class="links_1">
           <?php
             $query = "SELECT * FROM `lectures` WHERE `subject_id` = '$subject' ORDER BY `id` DESC";
             $result = mysqli_query($db, $query);
@@ -85,6 +85,29 @@
           ?>
         </div>
       </div>
+
+      <div class="div_1" id="notes_redirects">
+        <p>Resources (Redirect)</p>
+        <div class="links_1">
+        <?php
+        $query = "SELECT * FROM `resources` WHERE `subject_code`= '$subject' ORDER BY `id` DESC LIMIT 5";
+        $result = mysqli_query($db, $query);
+        if ($result) {
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo "<a target='blank' href='" . $row["link"] . "'>";
+            echo "<p class='ll_head'>" . $row["title"] . "</p>";
+            echo '<div class="ll_small_text">';
+            echo '<p>' . $row["description"] . '</p>';
+            echo '</div>';
+            echo '</a>';
+          }
+        }
+        ?>
+        </div>
+      </div>
+
+      <div class="divider_1"></div>
+
     </div>
   </body>
 </html>

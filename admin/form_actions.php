@@ -45,10 +45,11 @@
         echo "new resource request";
         echo "<br>";
         $title = mysqli_escape_string($db, $_POST["title"]);
+        $subject_code = mysqli_escape_string($db, $_POST["subject_code"]);
         $description = mysqli_escape_string($db, $_POST["description"]);
         $link = mysqli_escape_string($db, $_POST["link"]);
 
-        $query = "INSERT INTO `resources` (`id`, `title`, `description`, `link`) VALUES (NULL, '$title', '$description', '$link')";
+        $query = "INSERT INTO `resources` (`id`, `title`, `subject_code`, `description`, `link`) VALUES (NULL, '$title', '$subject_code', '$description', '$link')";
         $result = mysqli_query($db, $query);
         if($result){
             echo "Success!";

@@ -31,7 +31,7 @@
 
       <div class="div_1" id="subjects_wrapper">
         <p>Choose the subject</p>
-        <div id="subjects_links_wrapper">
+        <div class="links_1">
             <?php
 
                 $query = "SELECT * FROM `subjects` WHERE `semester` = '$semester' ORDER BY `subject_no` ASC";

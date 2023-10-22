@@ -87,7 +87,7 @@
         }
         ?>
         <a href="resources">
-          <p class="ll_head">See All Resources</p>
+          <p class="ll_head">See Other Resources</p>
         </a>
       </div>
     </div>
