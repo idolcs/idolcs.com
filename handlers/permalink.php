@@ -24,7 +24,7 @@
 
 if(isset($_GET["sub"]) and isset($_GET["chap"])){
 
-    include "db.php";
+    include "../php/db.php";
 
     $subject = $_GET["sub"];
     $chapter = $_GET["chap"];

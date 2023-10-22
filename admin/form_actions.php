@@ -1,7 +1,7 @@
 <?php
 
     $gobackhref = "../admin";
-    include "../db.php";
+    include "../php/db.php";
 
     if(isset($_POST["new_subject"])){
         $semester = mysqli_escape_string($db, $_POST["semester"]);

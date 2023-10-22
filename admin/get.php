@@ -1,6 +1,6 @@
 <?php
 
-include "../db.php";
+include "../php/db.php";
 
     if(isset($_GET["subjects"])){
         $semester = $_GET["subjects"];
