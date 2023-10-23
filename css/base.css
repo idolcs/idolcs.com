@@ -22,6 +22,7 @@ body{
     width: 500px;
     max-width: 500px;
     /* background: #fdf6f1 ; */
+    overflow-x: hidden !important;
 }
 
 #nav{
@@ -88,6 +89,7 @@ body{
     color: #863600;
     background: #ffd3b1;
     transform: scale(1.05);
+    border-radius: 8px;
 }
 
 .important_link{

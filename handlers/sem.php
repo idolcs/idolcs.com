@@ -11,7 +11,6 @@
     <title><?php echo "Semester " . $semester ?></title>
      <base href="/"> 
     <link rel="stylesheet" href="css/base.css?v=1.1" />
-    <link rel="stylesheet" href="css/sem.css?v=1.1" />
   </head>
   <body>
     <div id="main_wrapper">

@@ -33,7 +33,7 @@
       <p>Latest Added Official Lectures</p>
       <div class="links_1">
         <?php
-        $query = "SELECT * FROM `lectures` ORDER BY `id` DESC LIMIT 5";
+        $query = "SELECT * FROM `lectures` ORDER BY `id` DESC LIMIT 3";
         $result = mysqli_query($db, $query);
         if ($result) {
           while ($row = mysqli_fetch_assoc($result)) {
@@ -56,7 +56,7 @@
       <p>Latest Added chapters</p>
       <div class="links_1">
         <?php
-        $query = "SELECT * FROM `chapters` ORDER BY `id` DESC LIMIT 5";
+        $query = "SELECT * FROM `chapters` ORDER BY `id` DESC LIMIT 3";
         $result = mysqli_query($db, $query);
         if ($result) {
           while ($row = mysqli_fetch_assoc($result)) {
@@ -70,10 +70,10 @@
     </div>
     <div class="divider_1"></div>
     <div class="div_1" id="group_links">
-      <p>Latest Updated Resources</p>
+      <p>Latest Updated Other Resources</p>
       <div class="links_1">
       <?php
-        $query = "SELECT * FROM `resources` ORDER BY `id` DESC LIMIT 5";
+        $query = "SELECT * FROM `resources` WHERE `subject_code` = '0' ORDER BY `id` DESC LIMIT 3";
         $result = mysqli_query($db, $query);
         if ($result) {
           while ($row = mysqli_fetch_assoc($result)) {
