@@ -17,7 +17,6 @@ $subject = $_GET["subject"];
     echo "<title>" . $row["subject_name"] . "</title>";
   }
   ?>
-  <title>Document</title>
   <base href="/">
   <link rel="stylesheet" href="css/base.css?v=1.1" />
 </head>
