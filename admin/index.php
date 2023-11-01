@@ -14,6 +14,38 @@
     <div id="main_wrapper">
 
         <div class="div_1">
+            <p>Create new Redirect</p>
+            <form class="form_div" action="admin/form_actions.php" method="post">
+                <label for="">
+                    <br>
+                    <p>Expected id = <?php 
+    include "../php/db.php";
+    $query = 'SELECT `id` FROM `redirects` ORDER BY `id` DESC LIMIT 1';
+    $result = mysqli_query($db, $query);
+    if ($result) {
+        $row = mysqli_fetch_array($result);
+        $new_id = (int)$row['id'] + 1;
+        echo $new_id;
+    }
+    
+                    ?></p>
+                </label>
+                <label for="">
+                    <p>Title</p>
+                    <input name="title" type="text" maxlength="255">
+                </label>
+                <label for="">
+                    <p>Link</p>
+                    <input name="link" type="text">
+                </label>
+                <input type="hidden" name="new_redirect">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="divider_1"></div>
+
+        <div class="div_1">
             <p>Create new Chapter</p>
             <form class="form_div" action="admin/form_actions.php" method="post">
                 <label for="">

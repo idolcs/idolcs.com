@@ -57,6 +57,20 @@
         }else{
             echo "error";
         }
+    }elseif(isset($_POST["new_redirect"])){
+        echo "new redirect request";
+        echo "<br>";
+        $title = mysqli_escape_string($db, $_POST["title"]);
+        $link = mysqli_escape_string($db, $_POST["link"]);
+
+        $query = "INSERT INTO `redirects` (`id`, `title`, `url`) VALUES (NULL, '$title', '$link')";
+        $result = mysqli_query($db, $query);
+        if($result){
+            echo "Success!";
+            echo "<a href='$gobackhref'>click here to go back</a>";
+        }else{
+            echo "error";
+        }
     }
 
 ?>
