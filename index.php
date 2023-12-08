@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IDOL CS</title>
   <link rel="stylesheet" href="css/base.css?v=1.1" />
-  <link rel="stylesheet" href="css/index.css?v=1.1" />
+  <link rel="stylesheet" href="css/index.css?v=1.2" />
 </head>
 
 <body>
@@ -20,6 +20,36 @@
       <p>
         Find notes, recorded lectures, video explanations and other resources for BSC CS IDOL (MU)
       </p>
+    </div>
+    <div class="divider_1"></div>
+    <div class="div_1" id="sem1_wrapper">
+      <h3>⚠️ Sem 1 exams in</h3>
+      <div id="counter_wrapper">
+        <div class="count_outer">
+          <div class="count_inner">
+            <p id="count_days">0</p>
+          </div>
+          <p>Days</p>
+        </div>
+        <div class="count_outer">
+          <div class="count_inner">
+            <p id="count_hours">0</p>
+          </div>
+          <p>Hours</p>
+        </div>
+        <div class="count_outer">
+          <div class="count_inner">
+            <p id="count_minutes">0</p>
+          </div>
+          <p>Minutes</p>
+        </div>
+        <div class="count_outer">
+          <div class="count_inner">
+            <p id="count_seconds">0</p>
+          </div>
+          <p>Seconds</p>
+        </div>
+      </div>
     </div>
     <div class="divider_1"></div>
     <div class="div_1" id="semester_wise_redirects">
@@ -107,10 +137,11 @@
     </div>
     <div class="divider_1"></div>
     <div class="div_1 footer" >
-      <p class="footer_p">Developed and Maintained by <a target="_blank" href="https://instagram.com/classicaf">Yash</a></p>
+      <p class="footer_p">Developed and Maintained by the IDOL CS Community</p>
+      <p class="footer_p">IDOLCS.com is an opensource project, the source code can be found on the official <a href="https://github.com/yashkolambekar/idolcs.com">Github Repository</a>, feel free to contribute.</p>
       <p class="footer_small">This is website / community does not support, endorse or perform piracy. Contact the admins on Telegram for removal of any copyrighted material.</p>
     </div>
   </div>
 </body>
-
+<script src='js/index.js'></script>
 </html>
