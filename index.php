@@ -1,5 +1,5 @@
 <?php
-    include "php/db.php";
+include "php/db.php";
 ?>
 
 <!DOCTYPE html>
@@ -49,6 +49,10 @@
           </div>
           <p>Seconds</p>
         </div>
+      </div>
+      <div id="calculations_wrapper">
+        <p>Chapters per day: <span id="chaps_per_day">0</span></p>
+        <p>Pages per day:  <span id="pages_per_day">0</span></p>
       </div>
     </div>
     <div class="divider_1"></div>
@@ -102,7 +106,7 @@
     <div class="div_1" id="group_links">
       <p>Latest Updated Other Resources</p>
       <div class="links_1">
-      <?php
+        <?php
         $query = "SELECT * FROM `resources` WHERE `subject_code` = '0' ORDER BY `id` DESC LIMIT 3";
         $result = mysqli_query($db, $query);
         if ($result) {
@@ -136,12 +140,15 @@
       </div>
     </div>
     <div class="divider_1"></div>
-    <div class="div_1 footer" >
+    <div class="div_1 footer">
       <p class="footer_p">Developed and Maintained by the IDOL CS Community</p>
-      <p class="footer_p">IDOLCS.com is an opensource project, the source code can be found on the official <a href="https://github.com/yashkolambekar/idolcs.com">Github Repository</a>, feel free to contribute.</p>
-      <p class="footer_small">This is website / community does not support, endorse or perform piracy. Contact the admins on Telegram for removal of any copyrighted material.</p>
+      <p class="footer_p">IDOLCS.com is an opensource project, the source code can be found on the official <a
+          href="https://github.com/yashkolambekar/idolcs.com">Github Repository</a>, feel free to contribute.</p>
+      <p class="footer_small">This is website / community does not support, endorse or perform piracy. Contact the
+        admins on Telegram for removal of any copyrighted material.</p>
     </div>
   </div>
 </body>
 <script src='js/index.js'></script>
+
 </html>
