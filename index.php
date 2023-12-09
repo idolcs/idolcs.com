@@ -10,7 +10,7 @@ include "php/db.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IDOL CS</title>
   <link rel="stylesheet" href="css/base.css?v=1.1" />
-  <link rel="stylesheet" href="css/index.css?v=1.2" />
+  <link rel="stylesheet" href="css/index.css?v=1.3" />
 </head>
 
 <body>
@@ -149,6 +149,6 @@ include "php/db.php";
     </div>
   </div>
 </body>
-<script src='js/index.js'></script>
+<script src='js/index.js?v=1.1'></script>
 
 </html>
