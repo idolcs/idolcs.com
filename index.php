@@ -22,40 +22,6 @@ include "php/db.php";
       </p>
     </div>
     <div class="divider_1"></div>
-    <div class="div_1" id="sem1_wrapper">
-      <h3>⚠️ Sem 1 exams in</h3>
-      <div id="counter_wrapper">
-        <div class="count_outer">
-          <div class="count_inner">
-            <p id="count_days">0</p>
-          </div>
-          <p>Days</p>
-        </div>
-        <div class="count_outer">
-          <div class="count_inner">
-            <p id="count_hours">0</p>
-          </div>
-          <p>Hours</p>
-        </div>
-        <div class="count_outer">
-          <div class="count_inner">
-            <p id="count_minutes">0</p>
-          </div>
-          <p>Minutes</p>
-        </div>
-        <div class="count_outer">
-          <div class="count_inner">
-            <p id="count_seconds">0</p>
-          </div>
-          <p>Seconds</p>
-        </div>
-      </div>
-      <div id="calculations_wrapper">
-        <p>Chapters per day: <span id="chaps_per_day">0</span></p>
-        <p>Pages per day:  <span id="pages_per_day">0</span></p>
-      </div>
-    </div>
-    <div class="divider_1"></div>
     <div class="div_1" id="semester_wise_redirects">
       <p>Access the notes, video explanations, live sessions and official lecture recordings as per semester 👇</p>
       <div id="semester_links" class="links_1">
