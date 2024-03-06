@@ -11,6 +11,8 @@
     <title><?php echo "Semester " . $semester ?></title>
      <base href="/"> 
     <link rel="stylesheet" href="css/base.css?v=1.1" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7148141514273746"
+     crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="main_wrapper">

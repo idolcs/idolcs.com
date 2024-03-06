@@ -11,6 +11,8 @@ include "php/db.php";
   <title>IDOL CS</title>
   <link rel="stylesheet" href="css/base.css?v=1.1" />
   <link rel="stylesheet" href="css/index.css?v=1.3" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7148141514273746"
+     crossorigin="anonymous"></script>
 </head>
 
 <body>

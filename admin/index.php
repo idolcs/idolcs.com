@@ -8,6 +8,8 @@
     <base href="../">
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/admin.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7148141514273746"
+     crossorigin="anonymous"></script>
 </head>
 
 <body>
