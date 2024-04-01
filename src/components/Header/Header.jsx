@@ -31,9 +31,9 @@ const Header = () => {
   ];
 
   
-  let headerTopClasses = "h-14 flex items-center justify-center relative z-[100]";
-  let headerFullClasses = "absolute top-0 w-full z-[99] flex flex-col p-4 items-center justify-center overflow-hidden";
-  let downArrowClasses = "absolute right-7";
+  let headerTopClasses = "";
+  let headerFullClasses = "";
+  let downArrowClasses = "";
   const [navOpen, setNavOpen] = useState(false);
   
   
@@ -55,11 +55,14 @@ const Header = () => {
   
   return (
     <>
-      <div className={headerTopClasses}>
-        <img className="h-[50%]" src={Logo} alt="" />
-        <img className={downArrowClasses} src={DownArrow} onClick={(e) => toggleNav()} alt="" />
+      <div className={`h-14 sm:h-[5.2rem] flex items-center justify-center sm:justify-start relative z-[100]` + headerTopClasses}>
+        <img className="h-[50%] sm:h-[45%] sm:ml-12" src={Logo} alt="" />
+        <div className="hidden sm:flex ml-10  gap-5 text-[0.71rem] font-medium">
+          {links}
+        </div>
+        <img className={`sm:hidden absolute right-7` + downArrowClasses} src={DownArrow} onClick={(e) => toggleNav()} alt="" />
       </div>
-      <div className={headerFullClasses}>
+      <div className={`absolute top-0 w-full z-[99] flex sm:hidden flex-col p-4  items-center justify-center overflow-hidden` + headerFullClasses}>
         {links}
       </div>
     </>
