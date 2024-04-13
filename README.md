@@ -1,8 +1,29 @@
-# React + Vite
+# IDOLCS Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Made with React and other libraries
 
-Currently, two official plugins are available:
+To run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository
+
+```shell
+git clone https://github.com/idolcs/idolcs.com.git
+```
+
+2. cd in the repo folder
+
+```shell
+cd idolcs.com
+```
+
+3. Install the packages
+
+```shell
+npm install
+```
+
+4. Start server
+
+```shell
+npm run dev
+```
