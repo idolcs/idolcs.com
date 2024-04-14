@@ -3,7 +3,7 @@ import Announcements from "./Announcements/Announcements";
 import Greeting from "./Greeting/Greeting";
 import RecentChapters from "./RecentChapters/RecentChapters";
 import Redirects from "./Redirects/Redirects";
-import Footer from "./Footer";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
     return (
