@@ -3,6 +3,7 @@ import Announcements from "./Announcements/Announcements";
 import Greeting from "./Greeting/Greeting";
 import RecentChapters from "./RecentChapters/RecentChapters";
 import Redirects from "./Redirects/Redirects";
+import Footer from "./Footer";
 
 const Home = () => {
     return (
@@ -14,7 +15,7 @@ const Home = () => {
             <div className="col-span-1">
                 <Redirects />
             </div>
-            <div className="">
+            <div>
                 <Announcements />
             </div>
             <div>
