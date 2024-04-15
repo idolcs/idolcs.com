@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
+import Greeting from '../Greeting/Greeting';
 
-const Login = () => {
-    const [username, setUsername] = useState('');
+const Login = (props) => {
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    const approvedUsers = [
+        {email: 'akshaymagrani1@gmail.com', password: '12345678', name: 'Akshay'},
+        {email: 'anil@gmail.com', password: '1234', name: 'Anil' },
+    ]
+
     const handleUsernameChange = (e) => {
-        setUsername(e.target.value);
+        setEmail(e.target.value);
     };
 
     const handlePasswordChange = (e) => {
@@ -14,23 +21,32 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add your login logic here
-        console.log('Username:', username);
+        const user = approvedUsers.find(user => user.email === email && user.password === password);
+        if (user) {
+            console.log('Welcome', email, user.name);
+            props.onLoginSuccess(user.name);
+        } else {
+            console.log('User is not authenticated');
+            return <p>'User is not authenticated'</p>
+        }
+        console.log('Username:', email);
         console.log('Password:', password);
     };
 
     return (
         <div className='p-3 border border-dashed border-gray-300 rounded'>
             <form onSubmit={handleSubmit}>
-                {/* <label>
-                    Email-Id:
-                    <input type="text" value={username} onChange={handleUsernameChange} placeholder='Email-Id' className='mt-3 px-2 py-4 w-full border rounded md:max-w-[25%] md:min-[300px]'/>
-                </label>
-                <br />
-                <label>
-                    Password:
-                    <input type="password" value={password} onChange={handlePasswordChange} placeholder='Password' className='mt-3 px-2 py-4 w-full border rounded md:max-w-[25%] md:min-[300px]'/>
-                </label> */}
+                <div className='flex flex-col justify-center items-center'>
+                    <label className='w-[100%] md:max-w-[40%] md:min-[300px] rounded mt-3'>
+                        <p>Email-Id:</p>
+                        <input type="email" value={email} onChange={handleUsernameChange} placeholder='Email-Id' className='mt-3 px-2 py-3 bg-greyPink-400 w-[100%] md:max-w-[100%] md:min-[300px]'/>
+                    </label>
+                    <br />
+                    <label className='w-[100%] md:max-w-[40%] md:min-[300px] rounded mt-3'>
+                        <p>Password:</p>
+                        <input type="password" value={password} onChange={handlePasswordChange} placeholder='Password' className='mt-3 px-2 py-3 rounded bg-greyPink-400 w-[100%] md:max-w-[100%] md:min-[300px]'/>
+                    </label>
+                </div>
                 <br />
                 <p className='text-center'>Hey, What should we call you?</p>
                 <div className='flex flex-col justify-center items-center'>
