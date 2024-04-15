@@ -1,6 +1,7 @@
 import Logo from "../../assets/logo/logo.svg";
 import DownArrow from "../../assets/icons/downarrow.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const pagesList = [
@@ -47,7 +48,7 @@ const Header = () => {
   }
   
   const links = pagesList.map((item) => (
-    <a key={item["name"]}  className="text-[1.3em] py-4">{item["name"]}</a>
+    <Link to={item.link} className="text-[1.3em] py-4">{item["name"]}</Link>
   ));
   const toggleNav = () => {
     setNavOpen(!navOpen);
