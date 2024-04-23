@@ -19,9 +19,9 @@ export default function Footer() {
                     <path d="M387.52 296V160L403.02 144H434.02V302.5L418.02 319H348.52L332.52 302.5V16L348.52 0H418.02L434.02 16V136.5H403.02L387.52 120.5V23.5H379.52V296H387.52Z" fill="black" />
                     <path d="M488.895 97.5L543.395 154V302L527.395 319H457.895L441.895 302V154H467.395L488.895 176V296H496.895V172.5L441.895 116V16L457.895 0H527.395L543.395 16V113L515.395 113.5L496.895 94V23.5H488.895V97.5Z" fill="black" />
                 </svg>
-                <nav className="mx-12 my-3 text-center flex flex-col flex-wrap justify-center sm:flex-row lg:justify-between md:items-center">
+                <nav className="mx-12 my-3 text-center flex flex-wrap justify-center sm:flex-row lg:justify-between md:items-center">
                     {links.map((link, index) => (
-                        <li key={index} className="p-3 mt-2 list-none border border-transparent rounded hover:border-[hsl(164,35%,59%)]">
+                        <li key={index} className="p-3 mt-2 mx-2 list-none border border-transparent rounded hover:border-[hsl(164,35%,59%)]">
                             <Link to={link.href}>{link.text}</Link>
                         </li>
                     ))}
