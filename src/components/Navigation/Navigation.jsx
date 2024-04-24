@@ -34,11 +34,17 @@ const Navigation = (props) => {
     setIsNavOpen(!isNavOpen);
   };
 
+  const toggleNavRedirect = () => { // Closes the navigation only when in mobile for redirects
+    if(window.innerWidth < 640){
+      setIsNavOpen(!isNavOpen);
+    }
+  }
+
   const links = pagesList.map((item) => (
     <Link
       to={item.link}
       className="py-6 text-[1.3em] underline-offset-2 hover:underline sm:py-4 sm:text-[1em]"
-      onClick={toggleNav}
+      onClick={toggleNavRedirect}
     >
       {item["name"]}
     </Link>
@@ -48,7 +54,7 @@ const Navigation = (props) => {
   return (
     <>
       <div
-        className={` no-scrollbar ease fixed top-0 z-[10000000000] sm:sticky ${isNavOpen ? "left-0" : "left-[-100%]"} flex h-[100vh] flex-col items-center text-white transition-all  duration-200 sm:left-0  ${isNavOpen ? "w-[80%] p-8 sm:w-[250px]" : "w-[80%] sm:w-0 sm:p-0"}  overflow-y-auto overflow-x-hidden bg-gradient-to-b from-[#6161A8] to-[#0A1E44] `}
+        className={` no-scrollbar ease fixed top-0 z-[100000] sm:sticky ${isNavOpen ? "left-0" : "left-[-100%]"} flex h-[100vh] flex-col items-center text-white transition-all  duration-200 sm:left-0  ${isNavOpen ? "w-[80%] p-8 sm:w-[250px]" : "w-[80%] sm:w-0 sm:p-0"}  overflow-y-auto overflow-x-hidden bg-gradient-to-b from-[#6161A8] to-[#0A1E44] `}
       >
         <div className="flex- flex w-full justify-end">
           <img
@@ -71,7 +77,7 @@ const Navigation = (props) => {
           <div className="p-2 text-center">
             <p className="text-[1.2em] font-bold mb-2 sm:mb-0">Sumeet Singh</p>
             <Link
-            onClick={toggleNav}
+            onClick={toggleNavRedirect}
               to={"/u"}
               className="mt-[4px] cursor-pointer sm:text-[0.8em] underline-offset-2 hover:underline"
             >
