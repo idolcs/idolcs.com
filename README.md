@@ -27,3 +27,5 @@ npm install
 ```shell
 npm run dev
 ```
+
+Contact us on telegram https://ttttt.me/idolcs
