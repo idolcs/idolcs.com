@@ -4,13 +4,28 @@ import Home from "./components/Home/Home";
 import Courses from "./components/Courses/Courses";
 import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Navigation/Navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Preloader from "./components/Preloader/Preloader";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [showPreloader, setShowPreloader] = useState(true);
+
+  const isDesktop = Boolean(window.innerWidth > 640);
+
+  useEffect(() => {
+    if(isDesktop){
+      setIsNavOpen(true);
+    }
+    const timeoutDuration = isDesktop ? 2500 : 3500;
+    setTimeout(()=> {
+      setShowPreloader(false);
+    }, timeoutDuration);
+  }, [])
 
   return (
     <>
+      <Preloader showPreloader={showPreloader} />
       <div className="relative flex">
         <div>
           <Navigation isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
