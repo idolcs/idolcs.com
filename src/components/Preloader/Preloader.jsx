@@ -16,7 +16,7 @@ const Preloader = (props) => {
           <img className="animate-loader-logo pb-10" src={Logo} alt="" />
         </div>
 
-        <div className="animate-loader-dots dotted-background fixed left-0 top-0 h-[100dvh] w-full"></div>
+        <div className={`${showPreloader ? "" : "hidden"} animate-loader-dots dotted-background fixed left-0 top-0 h-[100dvh] w-full`}></div>
 
         {/* <div
           className={`${showBalls ? "" : "hidden"} animate-loader-balls absolute bottom-[-10%] left-[-30%] aspect-square h-[45%] rounded-full bg-gradient-to-tr from-[#032E81] via-[#032E81] to-[#8BB3FF] sm:bottom-[-10%] sm:left-[-8%] sm:h-[70%]`}
