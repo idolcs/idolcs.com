@@ -1,6 +1,6 @@
 # IDOLCS Frontend
 
-Made with React and other libraries
+Development Server: https://idolcs.onrender.com
 
 ## To run locally
 
