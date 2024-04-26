@@ -20,19 +20,9 @@ const Login = () => {
     };
 
     return (
-        <div className='p-3 border border-dashed border-gray-300 rounded'>
+        <div className='text-white p-3 border border-dashed border-white rounded'>
             <form onSubmit={handleSubmit}>
-                {/* <label>
-                    Email-Id:
-                    <input type="text" value={username} onChange={handleUsernameChange} placeholder='Email-Id' className='mt-3 px-2 py-4 w-full border rounded md:max-w-[25%] md:min-[300px]'/>
-                </label>
-                <br />
-                <label>
-                    Password:
-                    <input type="password" value={password} onChange={handlePasswordChange} placeholder='Password' className='mt-3 px-2 py-4 w-full border rounded md:max-w-[25%] md:min-[300px]'/>
-                </label> */}
-                <br />
-                <p className='text-center'>Hey, What should we call you?</p>
+                <p className='text-center text-white mt-2'>Hey, What should we call you?</p>
                 <div className='flex flex-col justify-center items-center'>
                     <button className='w-[100%] md:max-w-[40%] md:min-[300px] bg-blueMagenta-500 p-3 mt-3 rounded hover:bg-blueMagenta-700'>Sign Up</button>
                     <button className='w-[100%] md:max-w-[40%] md:min-[300px] bg-greyPink-800 p-3 mt-3 rounded hover:bg-greyPink-900'>Login</button>

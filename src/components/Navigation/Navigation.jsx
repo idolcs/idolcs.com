@@ -54,7 +54,7 @@ const Navigation = (props) => {
   return (
     <>
       <div
-        className={` no-scrollbar ease fixed top-0 z-[100000] sm:sticky ${isNavOpen ? "left-0" : "left-[-100%]"} flex h-[100vh] flex-col items-center text-white transition-all  duration-200 sm:left-0  ${isNavOpen ? "w-[80%] p-8 sm:w-[250px]" : "w-[80%] sm:w-0 sm:p-0"}  overflow-y-auto overflow-x-hidden bg-gradient-to-b from-[#6161A8] to-[#0A1E44] `}
+        className={`no-scrollbar ease fixed top-0 z-[100000] sm:sticky ${isNavOpen ? "left-0" : "left-[-100%]"} flex h-[100vh] flex-col items-center text-white transition-all  duration-200 sm:left-0  ${isNavOpen ? "w-[80%] p-8 sm:w-[250px]" : "w-[80%] sm:w-0 sm:p-0"}  overflow-y-auto overflow-x-hidden bg-gradient-to-b from-[#6161A8] to-[#0A1E44] `}
       >
         <div className="flex w-full justify-end">
           <img
