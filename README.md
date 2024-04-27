@@ -1,6 +1,6 @@
 # IDOLCS Frontend
 
-Development Server: https://idolcs.onrender.com
+Visit at https://idolcs.com
 
 ## To run locally
 
@@ -37,4 +37,5 @@ Do not create routes with the names below, this will mess with hostinger file st
 - /legacy
 
 
+Development Server: https://idolcs.onrender.com \
 Contact us on telegram https://ttttt.me/idol_cs

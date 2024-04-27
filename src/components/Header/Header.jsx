@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo/logo.svg";
+import Logo from "../../assets/logo/logo-white.svg";
 import Hamburger from "../../assets/icons/hamburger.svg";
 import closeHamburger from "../../assets/icons/close-hamburger.svg";
 
