@@ -3,6 +3,7 @@
 Development Server: https://idolcs.onrender.com
 
 ## To run locally
+## To run locally
 
 1. Clone the repository
 
