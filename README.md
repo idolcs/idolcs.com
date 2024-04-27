@@ -37,5 +37,5 @@ Do not create routes with the names below, this will mess with hostinger file st
 - /legacy
 
 
-Development Server: https://idolcs.onrender.com
+Development Server: https://idolcs.onrender.com \
 Contact us on telegram https://ttttt.me/idol_cs
