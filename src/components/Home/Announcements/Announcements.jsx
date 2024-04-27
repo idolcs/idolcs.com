@@ -23,7 +23,7 @@ const Announcements = () => {
 
     return (
         <>
-            <h2 className="text-[1.3rem] font-semibold opacity-70 text-white">Announcements</h2>
+            <h2 className="text-xl font-semibold opacity-70 text-white">Announcements</h2>
             <div>
                 {announcementslist.map((data) => (<AnnouncementItem data={data}/>))}
             </div>

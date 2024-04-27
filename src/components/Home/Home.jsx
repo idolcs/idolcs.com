@@ -16,13 +16,10 @@ const Home = () => {
                     <Greeting />
                 </div>
                 <div>
-                    <input type="search" className='pl-10 p-2 rounded w-full bg-[url("./src/assets/icons/search.svg")] bg-no-repeat bg-[0.5rem_0.5rem]' placeholder="Search" />
+                    <RecentChapters />
                 </div>
                 <div>
                     <Announcements />
-                </div>
-                <div>
-                    <RecentChapters />
                 </div>
             </div>
         </>
