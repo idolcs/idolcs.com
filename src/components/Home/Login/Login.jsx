@@ -24,8 +24,8 @@ const Login = () => {
             <form onSubmit={handleSubmit}>
                 <p className='text-center text-white mt-2'>Hey, What should we call you?</p>
                 <div className='flex flex-col justify-center items-center'>
-                    <button className='w-[100%] md:max-w-[40%] md:min-[300px] bg-blueMagenta-500 p-3 mt-3 rounded hover:bg-blueMagenta-700'>Sign Up</button>
-                    <button className='w-[100%] md:max-w-[40%] md:min-[300px] bg-greyPink-800 p-3 mt-3 rounded hover:bg-greyPink-900'>Login</button>
+                    <button className='w-[100%] md:max-w-[40%] md:min-[300px] bg-[#AB9DFF] p-3 mt-3 text-[#000] font-semibold rounded-full hover:bg-[#8275cc]'>Sign Up</button>
+                    <button className='w-[100%] md:max-w-[40%] md:min-[300px] bg-[#F2F0F2] p-3 mt-3 text-[#000] font-semibold rounded-full hover:bg-greyPink-900'>Login</button>
                 </div>
             </form>
         </div>
