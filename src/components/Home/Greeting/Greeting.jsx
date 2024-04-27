@@ -31,10 +31,10 @@ const Greeting = () => {
     return (
         <>
             <div className="">
-                <div className="bg-[#F3F1F2] p-4 sm:p-6 rounded-lg overflow-x-hidden">
-                    <p className="text-[1.2em] font-semibold">Hey Sumeet 👋</p>
-                    <p className="font-light mt-2">Continue where you left</p>
-                    <div className="flex mt-1 overflow-x-scroll no-scrollbar" ref={scrollContainer.ref}>
+                <div className="sm:p-6 rounded-lg overflow-x-hidden">
+                    <h1 className="text-2xl font-bold text-white">Hey Sumeet 👋</h1>
+                    <p className="font-light text-white mt-2">Continue where you left</p>
+                    <div className="flex mt-3 overflow-x-scroll no-scrollbar" ref={scrollContainer.ref}>
                         {items.map(item => (<RecentItem item={item}/>))}
                     </div>
                 </div>

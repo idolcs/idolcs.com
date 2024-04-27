@@ -28,7 +28,7 @@ const RecentChapters = () => {
 
     return (
         <>
-            <p className="text-[1.3em] opacity-70 font-semibold">Recently Updated Chapters</p>
+            <h2 className="text-xl text-white opacity-70 font-semibold">Recently Updated Chapters</h2>
             <div>
                 {recentchapterslist.map((data)=> (<RecentChaptersItem data={data}/>))}
             </div>
