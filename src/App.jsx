@@ -17,10 +17,9 @@ function App() {
     if(isDesktop){
       setIsNavOpen(true);
     }
-    const timeoutDuration = isDesktop ? 2500 : 3500;
     setTimeout(()=> {
       setShowPreloader(false);
-    }, timeoutDuration);
+    }, 2500);
   }, [])
 
   return (

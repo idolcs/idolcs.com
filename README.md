@@ -1,8 +1,8 @@
 # IDOLCS Frontend
 
-Made with React and other libraries
+Development Server: https://idolcs.onrender.com
 
-To run locally
+## To run locally
 
 1. Clone the repository
 
@@ -28,4 +28,13 @@ npm install
 npm run dev
 ```
 
-Contact us on telegram https://ttttt.me/idolcs
+## For contributors
+
+Do not create routes with the names below, this will mess with hostinger file structure
+
+- /api
+- /result
+- /legacy
+
+
+Contact us on telegram https://ttttt.me/idol_cs
