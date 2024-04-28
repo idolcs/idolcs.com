@@ -23,12 +23,12 @@ const Announcements = () => {
 
     return (
         <>
-            <p className="text-[1.3rem] font-semibold opacity-70">Announcements</p>
+            <h2 className="text-xl font-semibold text-white">Announcements</h2>
             <div>
                 {announcementslist.map((data) => (<AnnouncementItem data={data}/>))}
             </div>
             <div className="w-full flex justify-end">
-                <Link className="p-[0.7em] bg-[#D5CEFF] mt-3 rounded-[0.3rem]" href="/null">view more</Link>
+                <Link className="p-[0.5em] bg-[#D5CEFF] mt-3 rounded-[0.3rem]" href="/null">view more</Link>
             </div>
         </>
     )

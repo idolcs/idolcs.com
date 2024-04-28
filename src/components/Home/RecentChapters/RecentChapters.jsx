@@ -28,12 +28,12 @@ const RecentChapters = () => {
 
     return (
         <>
-            <p className="text-[1.3em] opacity-70 font-semibold">Recently Updated Chapters</p>
+            <h2 className="text-xl text-white font-semibold">Recently Updated Chapters</h2>
             <div>
                 {recentchapterslist.map((data)=> (<RecentChaptersItem data={data}/>))}
             </div>
             <div className="w-full flex justify-end">
-                <Link  className="p-[0.7em] bg-[#D5CEFF] mt-3 rounded-[0.3rem]" href="/null">view more</Link>
+                <Link  className="p-[0.5em] bg-[#D5CEFF] mt-3 rounded-[0.3rem]" href="/null">view more</Link>
             </div>
         </>
     )
