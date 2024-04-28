@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Dropdown from "../Utils/Dropdown/Dropdown";
 import Noteslist from "./Noteslist/Noteslist";
+import ExtraResources from "./ExtraResources/ExtraResources";
 
 const Subject = () => {
 
@@ -19,12 +20,16 @@ const [selectedChapter, setSelectedChapter] = useState(null)
         title: "Exception Handling",
         chapId: "execept-hand",
       },
+      {
+        title: "Recursion",
+        chapId: "recursion",
+      },
     ],
   };
 
   return (
     <>
-      <div className="min-h-[100vh] px-4 py-4 sm:px-10">
+      <div className="min-h-[100vh] px-4 py-4 sm:px-10 w-full max-w-full">
         <div className="my-4">
           <p className="mb-4 text-[2em] font-bold">{data.title}</p>
           <p className="sm:max-w-[800px]">{data.description}</p>
@@ -41,8 +46,11 @@ const [selectedChapter, setSelectedChapter] = useState(null)
             defaultText={"Select Chapter"}
           />
         </div>
-        <div className="my-4 sm:max-w-[800px]">
+        <div className="mt-10 sm:max-w-[800px] w-full max-w-full">
             <Noteslist />
+        </div>
+        <div className="mt-10 sm:max-w-[800px] w-full max-w-full">
+          <ExtraResources />
         </div>
       </div>
     </>

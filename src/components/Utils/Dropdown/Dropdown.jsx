@@ -35,29 +35,6 @@ const Dropdown = (props) => {
     setValue(selectedValue)
   }, [selectedValue])
 
-  // const data = [
-  //   {
-  //     text: "Selection 1",
-  //     value: "select-1"
-  //   },
-  //   {
-  //     text: "Selection 2",
-  //     value: "select-2"
-  //   },
-  //   {
-  //     text: "Selection 3",
-  //     value: "select-3"
-  //   },
-  //   {
-  //     text: "Selection 4",
-  //     value: "select-4"
-  //   },
-  //   {
-  //     text: "Selection 5",
-  //     value: "select-5"
-  //   },
-  // ]
-
   const dropdownItemsList = data.map(datapoint => {
     return <DropdownItem setIsOpen={setIsOpen} setSelectedText={setSelectedText} setSelectedValue={setSelectedValue} datapoint={datapoint} />
   })
@@ -65,11 +42,11 @@ const Dropdown = (props) => {
   return (
     <>
       <div>
-        <div className="flex w-full items-center justify-between rounded bg-[#13133d] p-4 font-semibold" onClick={toggleIsOpen}>
+        <div className={`flex w-full items-center justify-between ${isOpen? "rounded-t-lg" : "rounded-lg"} bg-[#13133d] p-4 font-semibold`} onClick={toggleIsOpen}>
           <p className={``}>{selectedText ? selectedText : (defaultText? defaultText : "Please Select Something")}</p>
           <img src={Expand} className={`${isOpen ? "scale-y-[-1]" : ""}`}/>
         </div>
-        <div className={`rounded-b overflow-y-auto ${isOpen ? "max-h-[20em]" : "max-h-[0em]"}`}>
+        <div className={`rounded-b-md overflow-y-auto ${isOpen ? "max-h-[20em]" : "max-h-[0em]"}`}>
             {dropdownItemsList}
         </div>
       </div>

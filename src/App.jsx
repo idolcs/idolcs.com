@@ -30,7 +30,7 @@ function App() {
         <div>
           <Navigation isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         </div>
-        <div>
+        <div className="max-w-full">
           <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
           <Routes>
             <Route path="/" element={<Home />} />{" "}
