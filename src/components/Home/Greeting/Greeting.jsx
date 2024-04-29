@@ -15,7 +15,7 @@ const Greeting = () => {
                     <p className="text-white opacity-80">What's cooking?</p>
                     <p className="font-light text-white mt-6">Continue where you left</p>
                     <div className="flex mt-3 overflow-x-scroll no-scrollbar" ref={scrollContainer.ref}>
-                        {items.map(item => (<RecentItem key={item.name} item={item}/>))}
+                        {items.map(item => (<RecentItem item={item}/>))}
                     </div>
                 </div>
             </div>
