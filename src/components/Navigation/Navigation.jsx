@@ -59,7 +59,7 @@ const Navigation = (props) => {
         <div className="flex w-full justify-end">
           <img
             src={closeHamburger}
-            className="mb-6 w-[3em] invert sm:hidden"
+            className="mb-6 w-[3em] sm:hidden"
             onClick={toggleNav}
           />
         </div>

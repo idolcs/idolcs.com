@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Preloader from "./components/Preloader/Preloader";
 import { Provider } from "react-redux";
 import { store } from "./redux-store/store";
+import Subject from "./components/Subject/Subject";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -32,12 +33,13 @@ function App() {
         <div>
           <Navigation isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         </div>
-        <div>
+        <div className="max-w-full">
           <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
           <Routes>
             <Route path="/" element={<Home />} />{" "}
             <Route path="/home" element={<p>This is the home</p>} />
             <Route path="/courses" element={<Courses />} />
+            <Route path="/subject" element={<Subject />}  />
           </Routes>
           <Footer />
         </div>

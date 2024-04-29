@@ -10,6 +10,7 @@ body {
   font-style: normal;
   font-variation-settings: "slnt" 0;
   font-size: 14px;
+  @apply bg-[#1F1F65] text-white;
   @apply sm:text-[16px];
   @apply leading-[1.2em];
 }

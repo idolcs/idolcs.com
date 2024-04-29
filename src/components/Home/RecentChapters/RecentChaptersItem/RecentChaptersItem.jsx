@@ -5,14 +5,9 @@ const RecentChaptersItem = (props) => {
     const dispatch = useDispatch();
     return (
         <>
-<<<<<<< Updated upstream
             <div className="bg-[#AEB3EF] mt-2 p-4 py-4 w-full rounded-md">
                 <h3 className="text-sm font-semibold mb-1">{props["data"]["title"]}</h3>
-=======
-            <div className="bg-[#AEB3EF] mt-3 p-4 py-4 w-full rounded-md relative">
-                <h3 className="text-sm font-medium mb-2">{props["data"]["title"]}</h3>
                 <button className="absolute top-0 right-0 w-8 h-8 p-2 bg-blueMagenta-500 hover:bg-blueMagenta-700 text-white rounded-tr-md" onClick={() => dispatch(removeRecentChapter(props.data.id))}>X</button>
->>>>>>> Stashed changes
                 <div className="flex ">
                 <p className="text-xs mr-2">{props["data"]["subject"]}</p>
                 <p className="text-xs mr-2">{props["data"]["date"]}</p>
