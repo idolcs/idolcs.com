@@ -6,6 +6,8 @@ import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Navigation/Navigation";
 import { useEffect, useState } from "react";
 import Preloader from "./components/Preloader/Preloader";
+import { Provider } from "react-redux";
+import { store } from "./redux-store/store";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -24,6 +26,7 @@ function App() {
 
   return (
     <>
+      <Provider store={store}>
       <Preloader showPreloader={showPreloader} />
       <div className="relative flex">
         <div>
@@ -39,6 +42,7 @@ function App() {
           <Footer />
         </div>
       </div>
+      </Provider>
     </>
   );
 }
