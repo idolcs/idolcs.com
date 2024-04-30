@@ -25,7 +25,7 @@ const Header = (props) => {
             onClick={toggleNav}
           />
           <Link to={"/"}>
-        <img className="h-[30px] sm:ml-8 sm:h-[45%]" src={Logo} alt="" />
+            <img className="h-[30px] sm:ml-8 sm:h-[45%]" src={Logo} alt="" />
           </Link>
 
         <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg" className="">

@@ -28,6 +28,10 @@ const Navigation = (props) => {
       name: "Complaints",
       link: "/complaints",
     },
+    {
+      name: "Admin",
+      link: "/admin",
+    }
   ];
 
   const toggleNav = () => {
