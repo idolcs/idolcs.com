@@ -4,7 +4,7 @@ const Noteslist = () => {
     return (
         <>
             <div>
-                <p className="text-[1.7em] font-semibold w-full max-w-full">Notes</p>
+                <p className="text-[1.4em] font-semibold w-full max-w-full">Notes</p>
                 <Note />
                 <Note />
             </div>

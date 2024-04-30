@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings: "slnt" 0;
-  font-size: 14px;
+  font-size: 16px;
   @apply bg-[#1F1F65] text-white;
-  @apply sm:text-[16px];
   @apply leading-[1.2em];
 }
 
