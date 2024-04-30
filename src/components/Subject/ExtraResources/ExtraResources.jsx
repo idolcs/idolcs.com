@@ -23,7 +23,7 @@ const ExtraResources = () => {
     return (
         <>
             <div>
-            <p className="text-[1.7em] font-semibold w-full max-w-full mb-4">Extra Resourcess</p>
+            <p className="text-[1.4em] font-semibold w-full max-w-full mb-4">Extra Resourcess</p>
             {resourceslist.map(item => <ResourceItem data={item} />)}
             </div>
         </>

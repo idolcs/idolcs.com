@@ -7,12 +7,12 @@ const RecentChapters = () => {
 
     return (
         <>
-            <h2 className="text-xl text-white opacity-70 font-semibold">Recently Updated Chapters</h2>
+            <h2 className="text-xl text-white font-semibold">Recently Updated Chapters</h2>
             <div>
                 {recentChaptersList.map((data)=> (<RecentChaptersItem key={data.id} data={data}/>))}
             </div>
             <div className="w-full flex justify-end">
-                <Link  className="p-[0.5em] bg-[#D5CEFF] mt-3 rounded-[0.3rem]" href="/null">view more</Link>
+                <Link  className="px-[0.5em] py-[0.4em] bg-[#D5CEFF] mt-3 rounded-[0.3rem]" href="/null">view more</Link>
             </div>
         </>
     )

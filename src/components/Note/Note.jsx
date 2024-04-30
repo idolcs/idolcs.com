@@ -25,14 +25,6 @@ const Note = () => {
     {
         name: "@runtimemafia",
         avatar: Avatar
-    },
-    {
-        name: "@runtimemafia",
-        avatar: Avatar
-    },
-    {
-        name: "@yash",
-        avatar: Avatar
     }
   ]
 
@@ -46,13 +38,13 @@ const Note = () => {
         className="mt-4 rounded-lg p-4 py-6 overflow-x-hidden w-[100%] max-w-[100%]"
       >
         <div>
-          <p className="text-[1.4em] font-semibold">Last Minute Revision Notes</p>
+          <p className="text-[1.3em] font-semibold">Last Minute Revision Notes</p>
           <div className="mt-3">
             {documents.map((doc) => (
               <Document data={doc} />
             ))}
           </div>
-          <div className="mt-3">
+          <div className="mt-3 text-[0.9em] font-light">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
               repellendus itaque earum sequi numquam quis ut modi quidem,
