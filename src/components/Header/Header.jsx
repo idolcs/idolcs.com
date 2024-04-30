@@ -2,13 +2,18 @@ import Logo from "../../assets/logo/logo-white.svg";
 import Hamburger from "../../assets/icons/hamburger.svg";
 import closeHamburger from "../../assets/icons/close-hamburger.svg";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { setIsNavOpen } from "../../redux-store/features/misc/misc";
 
 const Header = (props) => {
-  const isNavOpen = props.isNavOpen;
-  const setIsNavOpen = props.setIsNavOpen;
+
+  const dispatch = useDispatch();
+
+  const isNavOpen = useSelector(state => state.misc).isNavOpen;
 
   const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
+    dispatch(setIsNavOpen(!isNavOpen));
   };
 
   return (
