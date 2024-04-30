@@ -6,7 +6,10 @@ import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Navigation/Navigation";
 import { useEffect, useState } from "react";
 import Preloader from "./components/Preloader/Preloader";
+import { Provider } from "react-redux";
+import { store } from "./redux-store/store";
 import Subject from "./components/Subject/Subject";
+import Admin from "./components/AdminPanel/Admin";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -25,6 +28,7 @@ function App() {
 
   return (
     <>
+      <Provider store={store}>
       <Preloader showPreloader={showPreloader} />
       <div className="relative flex">
         <div>
@@ -33,14 +37,16 @@ function App() {
         <div className="max-w-full">
           <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
           <Routes>
-            <Route path="/" element={<Home />} />{" "}
+            <Route path="/" element={<Home />} />
             <Route path="/home" element={<p>This is the home</p>} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/subject" element={<Subject />}  />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
           <Footer />
         </div>
       </div>
+      </Provider>
     </>
   );
 }

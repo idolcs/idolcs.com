@@ -1,32 +1,11 @@
 import RecentItem from "./RecentItem/RecentItem";
 import { useScrollContainer } from 'react-indiana-drag-scroll';
+import { useSelector } from "react-redux";
 
 const Greeting = () => {
     
     const scrollContainer = useScrollContainer();
-
-    const items = [
-        {
-            name: "Object Oriented Programming",
-            subject: "Programming with C",
-            sem: "B.Sc. CS Sem 3"
-        },
-        {
-            name: "File Structure",
-            subject: "Linux",
-            sem: "B.Sc. IT Sem 2"
-        },
-        {
-            name: "HTTP Server",
-            subject: "Programming with C",
-            sem: "B.Sc. CS Sem 3"
-        },
-        {
-            name: "Fundamentals of Marco-economics",
-            subject: "Economics",
-            sem: "B.Com Sem 1"
-        },
-    ]
+    const items = useSelector(state => state.recentItems.items);
 
     return (
         <>
@@ -35,7 +14,7 @@ const Greeting = () => {
                     <h1 className="text-2xl font-bold text-white">Hey Sumeet 👋</h1>
                     <p className="text-white opacity-80">What's cooking?</p>
                     <p className="font-light text-white mt-6">Continue where you left</p>
-                    <div className="flex mt-3 overflow-x-scroll no-scrollbar active:cursor-grabbing" ref={scrollContainer.ref}>
+                    <div className="flex mt-3 overflow-x-scroll no-scrollbar" ref={scrollContainer.ref}>
                         {items.map(item => (<RecentItem item={item}/>))}
                     </div>
                 </div>
