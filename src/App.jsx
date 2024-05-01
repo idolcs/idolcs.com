@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Courses from "./components/Courses/Courses";
 import Footer from "./components/Footer/Footer";
@@ -10,6 +10,8 @@ import { Provider } from "react-redux";
 import { store } from "./redux-store/store";
 import Subject from "./components/Subject/Subject";
 import Admin from "./components/AdminPanel/Admin";
+import LoginPage from "./components/Home/Login/LoginPage";
+import SignUp from "./components/Home/Login/SignUp";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -26,6 +28,8 @@ function App() {
     }, 2500);
   }, [])
 
+  const location = useLocation();
+
   return (
     <>
       <Provider store={store}>
@@ -35,15 +39,17 @@ function App() {
           <Navigation isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         </div>
         <div className="max-w-full">
-          <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+            {location.pathname !== '/loginPage' && location.pathname !== '/signup' && <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<p>This is the home</p>} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/subject" element={<Subject />}  />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/loginPage" element={<LoginPage />} />
+            <Route path="/signup" element={<SignUp />} />
           </Routes>
-          <Footer />
+            {location.pathname !== '/loginPage' && location.pathname !== '/signup' && <Footer />}
         </div>
       </div>
       </Provider>

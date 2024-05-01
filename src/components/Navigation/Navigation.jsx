@@ -31,6 +31,14 @@ const Navigation = (props) => {
     {
       name: "Admin",
       link: "/admin",
+    },
+    {
+      name: "LoginPage",
+      link: "/loginPage",
+    },
+    {
+      name: "SignUp",
+      link: "/signup",
     }
   ];
 
