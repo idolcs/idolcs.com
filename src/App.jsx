@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 import { store } from "./redux-store/store";
 import Subject from "./components/Subject/Subject";
 import Admin from "./components/AdminPanel/Admin";
+import SelectSubject from "./components/SelectSubject/SelectSubject";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -40,6 +41,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<p>This is the home</p>} />
             <Route path="/courses" element={<Courses />} />
+            <Route path="/selectsubject" element={<SelectSubject />} />
             <Route path="/subject" element={<Subject />}  />
             <Route path="/admin" element={<Admin />} />
           </Routes>
