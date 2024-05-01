@@ -46,8 +46,10 @@ const Dropdown = (props) => {
           <p className={``}>{selectedText ? selectedText : (defaultText? defaultText : "Please Select Something")}</p>
           <img src={Expand} className={`${isOpen ? "scale-y-[-1]" : ""}`}/>
         </div>
-        <div className={`rounded-b-md overflow-y-auto ${isOpen ? "max-h-[20em]" : "max-h-[0em]"}`}>
+        <div className="relative">
+        <div className={`absolute top-0 w-full rounded-b-md overflow-y-auto ${isOpen ? "max-h-[20em]" : "max-h-[0em]"} shadow-2xl shadow-black`}>
             {dropdownItemsList}
+        </div>
         </div>
       </div>
     </>
