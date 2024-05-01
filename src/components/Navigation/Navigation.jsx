@@ -61,6 +61,10 @@ const Navigation = () => {
       name: "SignUp",
       link: "/signup",
     },
+    {
+      name: "Verification",
+      link: "/verification",
+    },
   ];
 
   const toggleNav = () => {

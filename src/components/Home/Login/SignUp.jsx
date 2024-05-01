@@ -10,7 +10,7 @@ export default function SignUp() {
                 <p className="text-base">Enter Email  ID</p>
                 <input type="email" className="p-2 mb-3 border-b bg-transparent w-full"/>
                 <p className="text-base">Create a username</p>
-                <input type="password" className="p-2 mb-3 border-b bg-transparent w-full"/>
+                <input type="text" className="p-2 mb-3 border-b bg-transparent w-full"/>
                 <p className="text-base">Create Password</p>
                 <input type="password" className="p-2 mb-3 border-b bg-transparent w-full" />
                 <p className="text-base">Confirm Password</p>

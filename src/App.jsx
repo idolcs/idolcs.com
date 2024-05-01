@@ -12,6 +12,7 @@ import Subject from "./components/Subject/Subject";
 import Admin from "./components/AdminPanel/Admin";
 import LoginPage from "./components/Home/Login/LoginPage";
 import SignUp from "./components/Home/Login/SignUp";
+import VerificationPage from "./components/Home/Login/Verification";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -39,7 +40,7 @@ function App() {
           <Navigation isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         </div>
         <div className="max-w-full">
-            {location.pathname !== '/loginPage' && location.pathname !== '/signup' && <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />}
+            {location.pathname !== '/loginPage' && location.pathname !== '/signup' && location.pathname !== '/verification'  && <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<p>This is the home</p>} />
@@ -48,8 +49,9 @@ function App() {
             <Route path="/admin" element={<Admin />} />
             <Route path="/loginPage" element={<LoginPage />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/verification" element={<VerificationPage />} />
           </Routes>
-            {location.pathname !== '/loginPage' && location.pathname !== '/signup' && <Footer />}
+            {location.pathname !== '/loginPage' && location.pathname !== '/signup' && location.pathname !== '/verification' && <Footer />}
         </div>
       </div>
       </Provider>
