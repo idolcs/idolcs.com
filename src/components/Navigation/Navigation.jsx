@@ -65,6 +65,18 @@ const Navigation = () => {
       name: "Verification",
       link: "/verification",
     },
+    {
+      name: "Change Password",
+      link: "/changePassword",
+    },
+    {
+      name: "Reset Password",
+      link: "/resetPassword",
+    },
+    {
+      name: "Forgot Password",
+      link: "/forgotPassword",
+    },
   ];
 
   const toggleNav = () => {

@@ -1,10 +1,10 @@
 export default function VerificationPage() {
     return (
         <div className="bg-gradient w-screen h-screen">
-            <div className="p-2 h-[50%]">
+            <div className="p-2 h-[30%]">
                 <h1 className="m-4 text-white text-4xl border-b-2 w-[200px] font-bold">Enter Code</h1>
             </div>
-            <div className="p-6 rounded-t-3xl h-[50%] rounded-s-md bg-gradient-to-b from-[#5749A8] to-[#0D2B63]">
+            <div className="p-6 rounded-t-3xl h-[70%] rounded-s-md bg-gradient-to-b from-[#5749A8] to-[#0D2B63]">
                 <p className="text-base">We have send you the OTP code on your email </p>
                 <div className="flex justify-between max-w-60 m-auto">
                     <input type="number" className="block w-9 h-9 p-3 mt-24 mx-3 rounded bg-[#ABA2DE] placeholder:text-white placeholder:text-center arrow-remover" placeholder="0" maxLength={1} required/>

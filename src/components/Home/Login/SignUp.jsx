@@ -3,10 +3,10 @@ import GoogleLogo from '../../../assets/images/google vector.svg';
 export default function SignUp() {
     return (
         <div className="bg-gradient w-screen h-screen">
-            <div className="p-2 h-[25%]">
+            <div className="p-2 h-[30%]">
                 <h1 className="m-4 text-white text-4xl border-b-2 w-[300px] font-bold">Create Account</h1>
             </div>
-            <div className="p-6 rounded-t-3xl h-[75%] rounded-s-md bg-gradient-to-b from-[#5749A8] to-[#0D2B63]">
+            <div className="p-6 rounded-t-3xl h-[70%] rounded-s-md bg-gradient-to-b from-[#5749A8] to-[#0D2B63]">
                 <p className="text-base">Enter Email  ID</p>
                 <input type="email" className="p-2 mb-3 border-b bg-transparent w-full"/>
                 <p className="text-base">Create a username</p>
