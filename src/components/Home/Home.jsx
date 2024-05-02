@@ -1,8 +1,6 @@
-import About from "./About/About";
 import Announcements from "./Announcements/Announcements";
 import Greeting from "./Greeting/Greeting";
 import RecentChapters from "./RecentChapters/RecentChapters";
-import Redirects from "./Redirects/Redirects";
 import Login from "./Login/Login";
 
 const Home = () => {

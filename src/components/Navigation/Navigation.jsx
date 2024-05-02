@@ -53,6 +53,30 @@ const Navigation = () => {
       name: "Admin",
       link: "/admin",
     },
+    {
+      name: "LoginPage",
+      link: "/loginPage",
+    },
+    {
+      name: "SignUp",
+      link: "/signup",
+    },
+    {
+      name: "Verification",
+      link: "/verification",
+    },
+    {
+      name: "Change Password",
+      link: "/changePassword",
+    },
+    {
+      name: "Reset Password",
+      link: "/resetPassword",
+    },
+    {
+      name: "Forgot Password",
+      link: "/forgotPassword",
+    },
   ];
 
   const toggleNav = () => {
