@@ -16,6 +16,7 @@ import VerificationPage from "./components/Home/Login/Verification";
 import ChangePassword from "./components/Home/Login/ChangePassword";
 import ResetPassword from "./components/Home/Login/ResetPassword";
 import ForgotPassword from "./components/Home/Login/ForgotPassword";
+import SelectSubject from "./components/SelectSubject/SelectSubject";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -56,6 +57,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<p>This is the home</p>} />
             <Route path="/courses" element={<Courses />} />
+            <Route path="/selectsubject" element={<SelectSubject />} />
             <Route path="/subject" element={<Subject />}  />
             <Route path="/admin" element={<Admin />} />
             <Route path="/loginPage" element={<LoginPage />} />
